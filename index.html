@@ -5,10 +5,10 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <div class="container">
+      <header class="main-header">
         <nav class="main-navigation">
-          <img  src="img/small-logo.png" width="30" height="30" alt="Логотип Седоны">
+          <a><img  src="img/small-logo.png" width="30" height="30" alt="Логотип Седоны"></a>
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
@@ -16,21 +16,20 @@
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <main class="container">
-      <section class="why-sedona">
-        <img src="img/why-sedona.png" height="300" width="250" alt="Седона лучше Гранд Каньона">
-        <h1>Седона- небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </section>
-      <section class="all-reasons">
-        <div class="reason-1">
-          <div class="reason">
-            <h2 class="reason-title">Настоящий городок</h2>
-            <span>-№1-</span>
-            <p> Седона - не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
+      </header>
+      <main>
+        <section class="why-sedona">
+          <img src="img/why-sedona.png" height="300" width="250" alt="Седона лучше Гранд Каньона">
+          <h1>Седона- небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </section>
+        <section class="all-reasons">
+          <div class="reason-1">
+            <div class="reason">
+              <h2 class="reason-title">Настоящий городок</h2>
+              <span>-№1-</span>
+              <p> Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
           <div class="picture-right">
             <img src="img/reason-1.jpg" alt="Дом в Седоне" height="164" width="286">
           </div>
@@ -76,39 +75,37 @@
             <p>Большинство едет в Гранд Каньон и толпиться там</p>
           </div>
         </div>
-    </section>
+      </section>
       <div class="booking">
         <div class="choice">
           <h3>Заинтересовались?</h3>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="btn" type="button">Поиск гостиницы в Седоне</button>
             <form action="https://echo.htmlacademy.ru/">
-              Дата заезда:<input type="text" name="date-in">
+              <label for="date-in">Дата заезда:</label>
+              <input id="date-in" type="text" name="date-in" value="24 апреля 2016">
               <button class="btn-date" type="button"><img src="img/date.jpg"></button>
-              Дата выезда:<input type="text" name="date-out">
+              <label for="date-out">Дата выезда:</label>
+              <input type="text" name="date-out" value="4 июля 2016">
               <button class="btn-date" type="button"><img src="img/date.jpg"></button>
-              Взрослые:
+              <label for="adult">Взрослые:</label>
                   <button class="btn-minus" type="button">-</button>
-                  <input type="text">
+                  <input id="adult" type="text" value="2">
                   <button class="btn-plus" type="button">+</button>
-              Дети:
+              <label for="children">Дети:</label>
                   <button class="btn-minus" type="button">-</button>
-                  <input type="text" >
+                  <input id="children" type="text" value="0">
                   <button class="btn-plus" type="button">+</button>
               </label>
               <button class="btn-search" type="submit">Найти</button>
             </form>
-
         </div>
         <div class="map">
-          <img src="img/map/jpg">
+          <img src="img/map.jpg">
         </div>
       </div>
-
-
     </main>
     <footer class="main-footer">
-      <div class="container">
         <div class="hashtag">
           #VisitSedona
         </div>
@@ -122,8 +119,7 @@
           <img src="img/htmlacademy-logo" width="30" height="30" alt="логотип htmlacademy">
           <a class="btn" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
         </section>
-      <div>
     </footer>
-
+  </div>
   </body>
 </html>

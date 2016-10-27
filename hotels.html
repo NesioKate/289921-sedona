@@ -5,39 +5,50 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <div class="container">
+      <header class="main-header">
         <nav class="main-navigation">
-          <img  src="img/small-logo.png" width="30" height="30" alt="Логотип Седоны">
+          <a href="index.html"><img  src="img/small-logo.png" width="30" height="30" alt="Логотип Седоны"></a>
           <ul>
-            <li><a href="index.html">Информация</a></li>
+            <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
-    <main class="container">
+      </header>
+    <main>
         <form class="hotel-choice">
           <div class="structure">
-            <h2>Инфраструктура:</h2>
-            <input type="checkbox" name="pool" value="pool">Бассейн
-            <input type="checkbox" name="parking" value="parking">Парковка
-            <input type="checkbox" name="wi-fi" value="wi-fi">WI-FI
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <label id="pool">Бассейн</label>
+              <input id="pool" type="checkbox" name="pool" value="pool">
+              <label id="parking">Парковка</label>
+              <input id="parking" type="checkbox" name="parking" value="parking">
+              <label id="wi-fi">WI-FI</label>
+              <input id="wi-fi" type="checkbox" name="wi-fi" value="wi-fi">
+            </fieldset>
           </div>
           <div class="house-type">
-            <h2>Тип жилья:</h2>
-            <input type="checkbox" name="hostel" value="hostel">Гостиница
-            <input type="checkbox" name="hotel" value="hotel">Отель
-            <input type="checkbox" name="apartments" value="apartments">Апартаменты
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <label id="hostel">Гостиница</label>
+              <input id="hostel" type="checkbox" name="hostel" value="hostel">
+              <label id="hotel">Отель</label>
+              <input id="hotel" type="checkbox" name="hotel" value="hotel">
+              <label id="apartments">Апартаменты</label>
+              <input id="apartments" type="checkbox" name="apartments" value="apartments">
+            </fieldset>
           </div>
           <div class="price">
-            <label class="price">
-              <h2>Стоимость в сутки (р):</h2><span class="from-0">от 0</span>
-                                    <span class="till-3000">до 3000</span>
-              <input type="range">
-            </label
+            <label id="price">Стоимость в сутки (р):</label>
+              <label id="slider-left"><span class="from-0">от 0</span></label>
+              <div id="slider-left"></div>
+              <label id="slider-right"><span class="till-3000">до 3000</span></label>
+              <div id="slider-right"></div>
+              <div class="range-line"></div>
+              <div class="scale"></div>
           </div>
           <button class="btn-show" type="submit">Показать</button>
         </form>
@@ -95,10 +106,8 @@
             </div>
           </article>
         </div>
-
     </main>
     <footer class="main-footer">
-      <div class="container">
         <section class="hashtag">
           #VisitSedona
         </section>
@@ -112,8 +121,7 @@
           <img src="img/htmlacademy-logo" width="30" height="30">
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
-      <div>
     </footer>
-
+  </div>
   </body>
   </html>
