@@ -1,0 +1,25 @@
+h1{
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  font-family: PTSans;
+
+}
+
+a{
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  font-family: PTSans;
+}
+
+p{
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: regular;
+  font-family: PTSans;
+
+}
