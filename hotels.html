@@ -20,44 +20,46 @@
       </header>
     <main>
         <form class="hotel-choice">
-          <div class="structure">
-            <fieldset>
-              <legend>Инфраструктура:</legend>
-              <label id="pool">Бассейн</label>
-              <input id="pool" type="checkbox" name="pool" value="pool">
-              <label id="parking">Парковка</label>
-              <input id="parking" type="checkbox" name="parking" value="parking">
-              <label id="wi-fi">WI-FI</label>
-              <input id="wi-fi" type="checkbox" name="wi-fi" value="wi-fi">
-            </fieldset>
-          </div>
-          <div class="house-type">
-            <fieldset>
-              <legend>Тип жилья:</legend>
-              <label id="hostel">Гостиница</label>
-              <input id="hostel" type="checkbox" name="hostel" value="hostel">
-              <label id="hotel">Отель</label>
-              <input id="hotel" type="checkbox" name="hotel" value="hotel">
-              <label id="apartments">Апартаменты</label>
-              <input id="apartments" type="checkbox" name="apartments" value="apartments">
-            </fieldset>
-          </div>
-          <div class="price">
-            <fieldset>
-              <legend>Стоимость в сутки (р):</legend>
-                <label id="slider-left" class="from-0">от 0</label>
-                <label id="slider-right" class="till-3000">до 3000</label>
-                <div class="range">
-                  <div id="slider-left"></div>
-                  <div id="slider-right"></div>
-                  <div class="range-line"></div>
-                  <div class="scale"></div>
-                </div>
-            </fieldset>
-          </div>
+          <div class="clearfix">
+            <div class="structure">
+              <fieldset>
+                <legend>Инфраструктура:</legend>
+                <label id="pool">Бассейн</label>
+                <input id="pool" type="checkbox" name="pool" value="pool">
+                <label id="parking">Парковка</label>
+                <input id="parking" type="checkbox" name="parking" value="parking">
+                <label id="wi-fi">WI-FI</label>
+                <input id="wi-fi" type="checkbox" name="wi-fi" value="wi-fi">
+              </fieldset>
+            </div>
+            <div class="house-type">
+              <fieldset>
+                <legend>Тип жилья:</legend>
+                <label id="hostel">Гостиница</label>
+                <input id="hostel" type="checkbox" name="hostel" value="hostel">
+                <label id="hotel">Отель</label>
+                <input id="hotel" type="checkbox" name="hotel" value="hotel">
+                <label id="apartments">Апартаменты</label>
+                <input id="apartments" type="checkbox" name="apartments" value="apartments">
+              </fieldset>
+            </div>
+            <div class="price">
+              <fieldset>
+                <legend>Стоимость в сутки (р):</legend>
+                  <label id="slider-left" class="from-0">от 0</label>
+                  <label id="slider-right" class="till-3000">до 3000</label>
+                  <div class="range">
+                    <div id="slider-left"></div>
+                    <div id="slider-right"></div>
+                    <div class="range-line"></div>
+                    <div class="scale"></div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
           <button class="btn-show" type="submit">Показать</button>
         </form>
-        <header class="result-header">
+        <header class="result-header clearfix">
           <div class="result-header-left">
             <b>Найдено:3</b>
             <span>Сортировка</span>
@@ -70,8 +72,8 @@
             <button class="btn-sort-down-up" type="button"><img src="img/down-up.jpg" height="10" width="10"></button>
           </div>
         </header>
-        <div class="results">
-          <article class="result-item">
+        <div class="results clearfix">
+          <article class="result-item clearfix">
             <div class="result-item-left">
               <img src="img/hotel-1.jpg"  height="90" width="135" alt="Amara Resort & Spa">
               <h3>Amara Resort & Spa</h3>
@@ -84,7 +86,7 @@
               <span>Рейтинг: 8,5</span>
             </div>
           </article>
-          <article class="result-item">
+          <article class="result-item clearfix">
             <div class="result-item-left">
               <img src="img/hotel-2.jpg"  height="90" width="135" alt="Desert quail inn">
               <h3>Desert quail inn</h3>
@@ -97,7 +99,7 @@
               <span>Рейтинг: 8,9</span>
             </div>
           </article>
-          <article class="result-item">
+          <article class="result-item clearfix">
             <div class="result-item-left">
               <img src="img/hotel-3.jpg"  height="90" width="135" alt="Villas at poco diablo">
               <h3>Villas at poco diablo</h3>
@@ -112,7 +114,7 @@
           </article>
         </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
         <section class="hashtag">
           #VisitSedona
         </section>
