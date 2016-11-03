@@ -20,9 +20,8 @@
       </header>
     <main>
         <form class="hotel-choice">
-          <div class="clearfix">
-            <div class="structure">
-              <fieldset>
+            <div class="clearfix">
+              <fieldset class="structure">
                 <legend>Инфраструктура:</legend>
                 <label id="pool">Бассейн</label>
                 <input id="pool" type="checkbox" name="pool" value="pool">
@@ -31,9 +30,7 @@
                 <label id="wi-fi">WI-FI</label>
                 <input id="wi-fi" type="checkbox" name="wi-fi" value="wi-fi">
               </fieldset>
-            </div>
-            <div class="house-type">
-              <fieldset>
+              <fieldset class="house-type">
                 <legend>Тип жилья:</legend>
                 <label id="hostel">Гостиница</label>
                 <input id="hostel" type="checkbox" name="hostel" value="hostel">
@@ -42,12 +39,12 @@
                 <label id="apartments">Апартаменты</label>
                 <input id="apartments" type="checkbox" name="apartments" value="apartments">
               </fieldset>
-            </div>
-            <div class="price">
-              <fieldset>
+              <fieldset class="price">
                 <legend>Стоимость в сутки (р):</legend>
-                  <label id="slider-left" class="from-0">от 0</label>
-                  <label id="slider-right" class="till-3000">до 3000</label>
+                  <!--<label id="slider-left" class="from-0">от 0</label>-->
+                  <input id="slider-left" type="text" value="от 0">
+                  <!--<label id="slider-right" class="till-3000">до 3000</label>-->
+                  <input id="slider-right" type="text" value="до 3000">
                   <div class="range">
                     <div id="slider-left"></div>
                     <div id="slider-right"></div>
@@ -56,12 +53,11 @@
                   </div>
                 </fieldset>
               </div>
-            </div>
           <button class="btn-show" type="submit">Показать</button>
         </form>
         <header class="result-header clearfix">
           <div class="result-header-left">
-            <b>Найдено:3</b>
+            <b>Найдено:<output>3</output></b>
             <span>Сортировка</span>
             <a href="#" class="btn-sort" type="button">По цене</a>
             <a href="#" class="btn-sort" type="button">По типу</a>
@@ -72,47 +68,45 @@
             <button class="btn-sort-down-up" type="button"><img src="img/down-up.jpg" height="10" width="10"></button>
           </div>
         </header>
-        <div class="results clearfix">
-          <article class="result-item clearfix">
-            <div class="result-item-left">
-              <img src="img/hotel-1.jpg"  height="90" width="135" alt="Amara Resort & Spa">
-              <h3>Amara Resort & Spa</h3>
-              <span> Гостиница</span> <span>от 3500 р.</span>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
-            </div>
-            <div class="result-item-right">
-              <img src="img/4star.jpg" height="20" width="50">
-              <span>Рейтинг: 8,5</span>
-            </div>
-          </article>
-          <article class="result-item clearfix">
-            <div class="result-item-left">
-              <img src="img/hotel-2.jpg"  height="90" width="135" alt="Desert quail inn">
-              <h3>Desert quail inn</h3>
-              <span> Мотель</span> <span>от 2000 р.</span>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
-            </div>
-            <div class="result-item-right">
-              <img src="img/2star.jpg" height="20" width="50">
-              <span>Рейтинг: 8,9</span>
-            </div>
-          </article>
-          <article class="result-item clearfix">
-            <div class="result-item-left">
-              <img src="img/hotel-3.jpg"  height="90" width="135" alt="Villas at poco diablo">
-              <h3>Villas at poco diablo</h3>
-              <span> Апартаменты</span> <span>от 4000 р.</span>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
-            </div>
-            <div class="result-item-right">
-              <img src="img/3star.jpg" height="20" width="50">
-              <span>Рейтинг: 9,2</span>
-            </div>
-          </article>
-        </div>
+        <article class="result-item clearfix">
+          <div class="result-item-left">
+            <img src="img/hotel-1.jpg"  height="90" width="135" alt="Amara Resort & Spa">
+            <h3>Amara Resort & Spa</h3>
+            <span> Гостиница</span> <span>от 3500 р.</span>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
+          <div class="result-item-right">
+            <img src="img/4star.jpg" height="20" width="50">
+            <span>Рейтинг: 8,5</span>
+          </div>
+        </article>
+        <article class="result-item clearfix">
+          <div class="result-item-left">
+            <img src="img/hotel-2.jpg"  height="90" width="135" alt="Desert quail inn">
+            <h3>Desert quail inn</h3>
+            <span> Мотель</span> <span>от 2000 р.</span>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
+          <div class="result-item-right">
+            <img src="img/2star.jpg" height="20" width="50">
+            <span>Рейтинг: 8,9</span>
+          </div>
+        </article>
+        <article class="result-item clearfix">
+          <div class="result-item-left">
+            <img src="img/hotel-3.jpg"  height="90" width="135" alt="Villas at poco diablo">
+            <h3>Villas at poco diablo</h3>
+            <span> Апартаменты</span> <span>от 4000 р.</span>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
+          <div class="result-item-right">
+            <img src="img/3star.jpg" height="20" width="50">
+            <span>Рейтинг: 9,2</span>
+          </div>
+        </article>
     </main>
     <footer class="main-footer clearfix">
         <section class="hashtag">
@@ -125,7 +119,7 @@
         </section>
         <section class="footer-copyright">
           <p>Website by</p>
-          <img src="img/htmlacademy-logo" width="30" height="30">
+          <a href="https://htmlacademy.ru"><img src="img/htmlacademy-logo" width="30" height="30"></a>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
     </footer>

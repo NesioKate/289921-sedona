@@ -16,6 +16,11 @@ h1, h2{
 
 }
 
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -24,12 +29,10 @@ h1, h2{
 
 header{
   background-color: red;
-  width: 1200px;
 }
 
 .why-sedona{
-  background-color: blue;
-  width: 1200px;
+  background-color: green;
   min-height: 724px;
 }
 
@@ -42,7 +45,6 @@ header{
 
 .reason-1{
   background-color: green;
-  width: 1200px;
 }
 
 .reason-1 .reason{
@@ -59,17 +61,23 @@ header{
 
 .features{
   background-color: yellow;
-  width: 1200px;
 }
-.features .reason, .other-reasons .reason{
+.features .reason{
   float:left;
   background-color: grey;
   width: 400px;
+  min-height: 330px;
+}
+
+.other-reasons .reason{
+  float:left;
+  background-color: grey;
+  width: 400px;
+  min-height: 256px;
 }
 
 .reason-2{
   background-color: blue;
-  width: 1200px;
 }
 
 .reason-2 .picture-left{
@@ -84,11 +92,9 @@ header{
 
 .other-reasons{
   background-color: purple;
-  width: 1200px;
 }
 .booking{
   background-color: magenta;
-  width: 1200px;
 }
 
 .choice form{
@@ -100,7 +106,6 @@ header{
 
 footer{
   background-color: yellow;
-  width: 1200px;
 }
 
 .hashtag{
@@ -123,11 +128,17 @@ footer{
   margin-right: 73px;
 }
 
+.hotel-choice{
+  background-color: magenta;
+  min-height: 217px;
+}
+
 .structure{
   float:left;
   background-color: grey;
   width: 149px;
   margin-left: 73px;
+  min-height: 217px;
 }
 
 .house-type{
@@ -135,6 +146,7 @@ footer{
   background-color: grey;
   width: 166px;
   margin-left: 93px;
+  min-height: 217px;
 }
 
 .price{
@@ -142,21 +154,20 @@ footer{
   background-color: grey;
   width: 328px;
   margin-right: 73px;
+  min-height: 217px;
 }
-.hotel-choice{
-  background-color: magenta;
-  width: 1200px;
-}
+
 .result-header{
   background-color: green;
-  width: 1200px;
 }
+
 .result-header-right{
   float:right;
   background-color: grey;
   width:40px;
   margin-right:73px
 }
+
 .result-header-left{
   float:left;
   background-color: grey;
@@ -166,7 +177,6 @@ footer{
 
 .results{
   background-color: blue;
-  width:1200px;
 }
 
 .result-item-left{
