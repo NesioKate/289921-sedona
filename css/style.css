@@ -1,19 +1,116 @@
+/*спрайты*/
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-food {
+    width: 74px;
+    height: 70px;
+    background-position: -10px -10px;
+}
+
+.sprite-icon-check-off {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -100px;
+}
+
+.sprite-icon-check-on {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -142px;
+}
+
+.sprite-icon-copyright {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -184px;
+}
+
+.sprite-icon-date {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -243px;
+}
+
+.sprite-icon-down {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -285px;
+}
+
+.sprite-icon-f {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -315px;
+}
+
+.sprite-icon-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -354px;
+}
+
+.sprite-icon-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -377px;
+}
+
+.sprite-icon-twit {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -408px;
+}
+
+.sprite-icon-up {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -443px;
+}
+
+.sprite-icon-youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -10px -473px;
+}
+
+.sprite-live {
+    width: 75px;
+    height: 72px;
+    background-position: -10px -509px;
+}
+
+.sprite-present {
+    width: 64px;
+    height: 76px;
+    background-position: -10px -601px;
+}
+
+
+
 body{
   font-size: 14px;
   line-height: 26px;
-  color: black;
-  font-weight: regular;
-  font-family: PTSans;
-
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  background: white;
 }
 
-h1, h2{
+h1{
   font-size: 21px;
   line-height: 26px;
   color: black;
   font-weight: bold;
-  font-family: PTSans;
 
+}
+
+.main-header {
+    position: relative;
 }
 
 .container{
@@ -27,168 +124,432 @@ h1, h2{
   clear: both;
 }
 
-header{
-  background-color: red;
+/*верхнее меню*/
+.main-navigation ul{
+  vertical-align: top;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 0px;
+  text-align: center;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
-.why-sedona{
-  background-color: green;
-  min-height: 724px;
+.main-navigation li{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 20%;
 }
+
+.main-navigation li:nth-child(1),
+.main-navigation li:nth-child(2) {
+  float: left;
+}
+
+.main-navigation li:nth-child(3),
+.main-navigation li:nth-child(4) {
+  float: right;
+}
+
+.main-navigation a{
+  text-decoration: none;
+  display: block;
+  color: black;
+  text-align: left;
+}
+
+.main-navigation li:nth-child(3) a,
+.main-navigation li:nth-child(4) a{
+  text-align: right;
+}
+
+.main-header .logo{
+  position:absolute;
+  left: 50%;
+  margin-left: -70px;
+  z-index: 10;
+}
+
+.main-navigation a:hover{
+  color: #81b3d2;
+}
+
+.main-navigation a:active{
+  color: #b7b7b7;
+}
+
+
+/*.main-navigation .right{
+text-align: right;
+margin-left: 100%;
+}*/
+
+/*картинка + главный тезис*/
+
 
 .why-sedona h1, .why-sedona p{
-  background-color: grey;
-  width: 450px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 340px;
+  text-align: center;
+}
+.why-sedona h1{
+  margin-top: 60px;
+}
+.why-sedona p{
+  margin-top: 40px;
 }
 
+/*причины*/
 .reason-1{
-  background-color: green;
+  margin-top: 55px;
 }
 
 .reason-1 .reason{
   float:left;
-  background-color: grey;
-  width: 400px;
+  background-color: #81b3d2;
+  width: 34%;
+  min-height: 256px;
+  text-align: center;
+  color: white;
+
+}
+.reason h2, .reason p, .reason span{
+padding-left: 53px;
+padding-right: 53px;
+}
+.reason h2{
+  padding-top: 50px;
 }
 
 .reason-1 .picture-right{
-  float:right;;
-  background-color: grey;
+  float:right;
+  width: 66%;
 }
 
-
 .features{
-  background-color: yellow;
+  text-align: center;
 }
 .features .reason{
   float:left;
-  background-color: grey;
-  width: 400px;
-  min-height: 330px;
+  width: 33%;
+
+}
+.live, .food, .present{
+margin-top: 100px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
 }
 
-.other-reasons .reason{
-  float:left;
-  background-color: grey;
-  width: 400px;
-  min-height: 256px;
+.live::before, .food::before, .present::before{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 80%;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;}
+
+.live::before{
+  width: 75px;
+  height: 72px;
+  background-position: -10px -509px;
+}
+
+.food::before{
+  left: 25%;
+  width: 74px;
+  height: 70px;
+  background-position: -10px -10px;
+}
+.present::before{
+  left: 35%;
+  width: 64px;
+  height: 76px;
+  background-position: -10px -601px;
 }
 
 .reason-2{
-  background-color: blue;
+  background: #eeeeee;
+  margin-top:80px;
 }
-
 .reason-2 .picture-left{
   float:left;
+  width: 66%
 }
 
 .reason-2 .reason{
-  float:right;;
-  background-color: grey;
-  width: 400px;
+  float:right;
+  background-color: #81b3d2;
+  width: 34%;
+  min-height: 256px;
+  text-align: center;
+  color: white;
+}
+.grey-reasons{
+  background: #eeeeee;
+  padding-bottom: 60px;
+}
+.grey-reasons h2, .grey-reasons p, .grey-reasons span{
+padding-left: 60px;
+padding-right: 60px;
 }
 
-.other-reasons{
-  background-color: purple;
+
+/*форма поиска*/
+
+.choice h3, .choice p{
+  padding-left: 370px;
+  padding-right:370px;
+  text-align: center;
 }
-.booking{
-  background-color: magenta;
+.choice h3{
+font-size: 21px;
+line-height: 26px;
+font-weight: bold;
+}
+.btn-choice{
+  background-color: #766357;
+
 }
 
 .choice form{
-  background-color: grey;
+  background-color: white;;
   width: 576px;
+  min-height: 398px;
   margin-left: auto;
   margin-right: auto;
 }
 
+
+/*футер*/
 footer{
-  background-color: yellow;
+  padding: 30px 6%;
+  text-align: center;
+  /*background-color: rgba(0,0,0,0.5);*/
 }
 
 .hashtag{
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
   float:left;
-  background-color: grey;
-  width: 240px;
-  margin-left: 73px;
-  margin-right: 88px;
+  width: 33%;
 }
 .footer-social{
   float:left;
-  background-color: grey;
-  width: 400px;
+  width: 33%;
+  font-size: 0;
+}
+
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 46px;
+  height: 48px;
+  font-size: 16px;
+  background-color: #81b3d2;
+  position: relative;
+}
+
+.social-btn::before{
+  content:"";
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+
+  /*background-image: url("../img/sprite.png");*/
+  background-repeat: no-repeat;
+}
+
+.social-btn:hover{
+  background-color: #669ec0;
 
 }
+
+.social-btn:active{
+  background: #5496be;
+
+}
+
+
+.social-btn-twitter::before {
+
+  width: 17px;
+  height: 15px;
+  background-position: -10px -408px;
+}
+.social-btn-fb::before{
+  width: 10px;
+  height: 19px;
+  background-position: -10px -315px;
+}
+
+.social-btn-youtube::before{
+  width: 20px;
+  height: 16px;
+  background-position: -10px -473px;
+}
+
 .footer-copyright{
   float:right;
-  background-color: grey;
-  width: 240px;
-  margin-right: 73px;
+  width: 33%;
+}
+.copyright {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  position: relative;
 }
 
+.copyright::before{
+  content:"";
+  position: absolute;
+  top: -25%;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 113px;
+  height: 39px;
+  background-position: -10px -184px;
+}
+
+
+
+/*вторая страница*/
+
+/*форма выбора*/
 .hotel-choice{
-  background-color: magenta;
-  min-height: 217px;
+  background-image: url("img/hotels-form.jpg");
+  padding:0;
+  margin: 0;
+  font-size: 0px;
+}
+
+fieldset{
+width:20%;
+font-size: 16px;
 }
 
 .structure{
   float:left;
-  background-color: grey;
-  width: 149px;
-  margin-left: 73px;
-  min-height: 217px;
+
+
 }
 
 .house-type{
   float:left;
-  background-color: grey;
-  width: 166px;
-  margin-left: 93px;
-  min-height: 217px;
 }
 
 .price{
-  float:right;;
-  background-color: grey;
-  width: 328px;
-  margin-right: 73px;
-  min-height: 217px;
-}
+  float:right;
 
-.result-header{
-  background-color: green;
 }
-
+/*хлебные крошки*/
 .result-header-right{
   float:right;
   background-color: grey;
   width:40px;
   margin-right:73px
 }
+.btn-sort-up-down {
+  background: transparent;
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  position: relative;
+}
+
+.btn-sort-up-down::before{
+  content:"";
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+  background-position: -10px -285px;
+}
 
 .result-header-left{
   float:left;
-  background-color: grey;
-  width:528px;
-  margin-left:73px
+
+}
+.result-header-left b{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-left: 73px;
+}
+.result-header-left .btn-sort, .result-header-left span{
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 35px;
+  border: none;
+}
+/*результат*/
+.result-item{
+    padding-left: 150px;
+    position: relative;
+    padding-right: 100px;
+}
+.result-item .img{
+  position: absolute;
+  top:0;
+  left: 0;
+
 }
 
-.results{
-  background-color: blue;
+.result-item .info{
+
+  width:250px;
 }
 
-.result-item-left{
-  float:left;
-  background-color: grey;
-  width:528px;
-  margin-left:73px;
+.result-item-left h3{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
 }
 
+.result-item-left .more, .result-item-left .reservations{
+  padding: 5px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.result-item-left .more{
+  background-color: #81b3d2;
+}
+.result-item-left .more:hover{
+  background-color: #669ec0;
+}
+.result-item-left .more:active{
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+.result-item-left .reservations{
+  background-color: #766357;
+}
+.result-item-left .reservations:hover{
+  background-color: #604e43;
+}
+.result-item-left .reservations:active{
+  background-color: #503e33;
+  color: #857871;
+}
 .result-item-right{
-  float:right;;
+  float:right;
   background-color: grey;
-  width:241px;
-  margin-right:73px
+  text-align: right;
+  width:20%;
+  margin-right:73px;
+
 }
