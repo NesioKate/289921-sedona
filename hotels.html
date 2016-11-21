@@ -41,8 +41,7 @@
                 <input id="apartments" type="checkbox" name="apartments" value="apartments" checked>
                 <label class="apartments" for="apartments">Апартаменты</label><br>
               </fieldset>
-              <fieldset class="price">
-                <div class="filter-range">
+              <fieldset class="price filter-range">
                   <legend class="filter-range-title">Стоимость в сутки (р):</legend>
                     <div class="price-controls">
                       <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -56,7 +55,6 @@
                       <div class="range-toggle range-toggle-max"></div>
                     </div>
                     <button class="btn-transparent" type="submit">Показать</button>
-                  </div>
                 </fieldset>
               </div>
         </form>
@@ -64,7 +62,7 @@
           <div class="result-header-left">
             <b>Найдено:  <output>3</output></b>
             <span>Сортировка:</span>
-            <a href="#" class="btn-sort active">По цене</button>
+            <a href="#" class="btn-sort active">По цене</a>
             <a href="#" class="btn-sort">По типу</a>
             <a href="#" class="btn-sort">По рейтингу</a>
           </div>
@@ -73,7 +71,7 @@
             <button class="btn-sort-up-down btn-sort-up-down-active" type="button">По убыванию</button>
           </div>
         </header>
-        <article class="result-item clearfix">
+        <div class="result-item clearfix">
             <img class="img" src="img/hotel-1.jpg"  height="90" width="135" alt="Amara Resort & Spa">
             <div class="info">
               <strong><a class="hotel" href="#">Amara Resort & Spa</a></strong>
@@ -87,11 +85,11 @@
               </div>
             </div>
           <div class="result-item-right">
-            <pn class="stars4"></p>
+            <p class="stars4"></p>
             <span>Рейтинг: 8,5</span>
           </div>
-        </article>
-        <article class="result-item clearfix">
+        </div>
+        <div class="result-item clearfix">
             <img class="img" src="img/hotel-2.jpg"  height="90" width="135" alt="Desert quail inn">
             <div class="info">
               <strong><a class="hotel" href="#">Desert quail inn</a></strong>
@@ -108,8 +106,8 @@
               <p class="stars2"></p>
               <span >Рейтинг: 8,9</span>
             </div>
-        </article>
-        <article class="result-item clearfix">
+        </div>
+        <div class="result-item clearfix">
             <img class ="img" src="img/hotel-3.jpg"  height="90" width="135" alt="Villas at poco diablo">
             <div class="info">
               <strong><a class="hotel" href="#">Villas at poco diablo</a></strong>
@@ -126,21 +124,21 @@
               <p class="stars3"></p>
               <span>Рейтинг: 9,2</span>
           </div>
-        </article>
+        </div>
     </main>
     <footer class="main-footer clearfix">
         <span class="hashtag">
           #VisitSedona
         </span>
-        <section class="footer-social">
+        <div class="footer-social">
           <a class="social-btn social-btn-twitter" href="#"><span class="visuallyHidden">twitter</span></a>
           <a class="social-btn social-btn-fb" href="#"><span class="visuallyHidden">facebook</span></a>
           <a class="social-btn social-btn-youtube" href="#"><span class="visuallyHidden">youtube</span></a>
-        </section>
-        <section class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
           <span>Website by</span>
           <a class="copyright" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+        </div>
     </footer>
   </div>
   </body>
