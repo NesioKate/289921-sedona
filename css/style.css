@@ -9,7 +9,7 @@ body{
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   background: #f2f2f2;
 }
@@ -51,11 +51,7 @@ h1{
 
 /*верхнее меню*/
 .main-navigation ul{
-  /*margin: 0px;
-  padding: 0px;
-  list-style: none;*/
   font-size: 0px;
-  /*text-align: center;*/
   padding-left: 6%;
   padding-right: 6%;
 }
@@ -68,12 +64,9 @@ h1{
   padding-top: 14px;
   padding-bottom: 14px;
   width: 20%;
-}
-
-.main-navigation li:nth-child(1),
-.main-navigation li:nth-child(2) {
   float: left;
 }
+
 
 .main-navigation li:nth-child(3),
 .main-navigation li:nth-child(4) {
@@ -128,6 +121,9 @@ opacity: 0.3;
   z-index: 2;
   background: transparent url("../img/header-mask.png") no-repeat 0 0;
 }
+.why-sedona{
+  position: relative;
+}
 .why-sedona h1, .why-sedona p{
   padding: 0 100px;
   text-align: center;
@@ -138,6 +134,7 @@ opacity: 0.3;
 .why-sedona p{
   margin-top: 26px;
 }
+
 
 /*причины*/
 .reason-1{
@@ -173,22 +170,20 @@ opacity: 0.3;
   padding-top: 5px;
 }
 
-
-
 .features{
   text-align: center;
-
+}
+.features p{
+  margin-top: 3px;
 }
 .features .reason{
   float:left;
   width: 300px;
   padding-left: 50px;
   padding-right: 50px;
+  text-align: center;
+}
 
-}
-.features p{
-  margin-top: 3px;
-}
 .live, .food, .present{
   margin-top: 160px;
   display: inline-block;
@@ -199,7 +194,6 @@ opacity: 0.3;
   content: "";
   display: block;
   position: absolute;
-  text-align: center;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 76px;
@@ -222,7 +216,7 @@ opacity: 0.3;
 
 .reason-2{
   background: #eeeeee;
-  margin-top:70px;
+  margin-top:67px;
   overflow: hidden;
 }
 .reason-2 .picture-left{
@@ -250,7 +244,7 @@ opacity: 0.3;
   padding-top: 5px;
 }
 .grey-reasons h2, .grey-reasons p, .grey-reasons span{
-padding-top: 20px;
+padding-top: 23px;
 padding-left: 10px;
 padding-right: 10px;
 text-align: center;
@@ -262,7 +256,7 @@ text-align: center;
   position: relative;
 }
 .booking h3{
-  padding-top: 25px;
+  padding-top: 21px;
 }
 .booking h3, .booking p{
   padding-left: 100px;
@@ -280,7 +274,9 @@ position: relative;
 }
 .btn-choice{
   background-color: #766357;
-  padding:31px 139px 30px 139px;
+  padding:31px 50px 30px 50px;
+  text-align: center;
+  width:  570px;
   border: none;
   color: white;
   font-size: 21px;
@@ -327,7 +323,6 @@ position: relative;
 .date-in, .date-out, .adult{
   float: left;
   min-height: 40px;
-  line-height: 40px;
   width: 95px;
   margin-right: 15px;
   padding-top: 5px;
@@ -376,15 +371,15 @@ position: relative;
   background-color: #f2f2f2;
   border: none;
   float: left;
-  min-height: 36px;
+  height: 36px;
   width: 25px;
-  padding-left: 13px;
+  padding-left: 7px;
+  padding-right: 7px;
+  text-align: center;
 
 }
 .btn-minus{
   background:  #f2f2f2 url("../img/sprite.png") no-repeat;
-  width: 12px;
-  height: 3px;
   background-position: 1px -604px;
   border: none;
   width: 38px;
@@ -393,8 +388,6 @@ position: relative;
 }
 .btn-minus:hover{
   background:  #f2f2f2 url("../img/sprite.png") no-repeat;
-  width: 12px;
-  height: 3px;
   background-position: 1px -658px;
   border: none;
   width: 38px;
@@ -466,12 +459,15 @@ margin-top:45px;
   height: 34px;
   background-color: white;
   border: 2px solid #e5e5e5;
+  padding-left: 13px;
+  padding-right: 2px;
 }
 .mini-input:active{
   width: 21px;
-  height: 28px;
+  height: 32px;
   background-color: white;
   border: 2px solid #e5e5e5;
+
 }
 
 .btn-search:hover{
@@ -515,11 +511,14 @@ footer{
 .social-btn {
   display: inline-block;
   vertical-align: top;
-  margin-left: 6px;
+  margin-right: 6px;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
   background-image: url("../img/sprite.png");
+}
+.social-btn:last-child{
+  margin-right: 0;
 }
 .social-btn:hover{
   background-color: #669ec0;
@@ -606,11 +605,17 @@ footer{
   text-transform: uppercase;
   padding:0 6%;
 }
-.structure, .house-type{
+.form-column{
   margin-top: 30px;
   border: none;
   margin-left: -10px;
   margin-bottom: -5px;
+  float:left;
+  width:200px;
+  /*position: relative;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .price{
   margin-top: 24px;
@@ -618,70 +623,43 @@ footer{
   margin-right: -20px;
 }
 
-.structure>label, .house-type>label{
+.form-column>label{
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
 
 }
-legend{
-  margin-bottom: 18px;
-}
 
-.structure{
-  float:left;
-  width:120px;
-  position: relative;
+
+
+.form-column legend{
+  width: 100%;
+
 }
-.structure label, .house-type label{
-  padding-left: 20px;
+.form-column label{
+  /*padding-left: 20px;*/
+  width: 160px;
 
 }
 .house-type{
-  width: 170px;
-  margin-left: 94px;
-  float:left;
+  margin-left: 32px;
 }
 
-.structure input, .house-type input{
+.form-column input{
   opacity: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+  height: 0px;
 }
 
-fieldset input + label::before{
+
+
+.form-column input + label::before{
   content: url("../img/icon-check-off.png");
-  position: absolute;
-
+  padding-right: 15px;
 }
-fieldset input:checked + label::before {
+.form-column input:checked + label::before {
   content: url("../img/icon-check-on.png");
-  position: absolute;
-
-}
-.pool::before{
-  left: 9px;
-  top: 44px;
-}
-.parking::before{
-  left: 9px;
-  top: 90px;
-}
-.wi-fi::before{
-  left: 9px;
-  top: 135px;
-}
-
-.hostel::before{
-  left:400px;
-  top: 128px;
-}
-.hotel::before{
-  left: 400px;
-  top: 175px;
-}
-.apartments::before{
-  left: 400px;
-  top: 220px;
+  padding-right: 15px;
 }
 
 .price{
@@ -694,7 +672,8 @@ fieldset input:checked + label::before {
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  padding-top: 4px;
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -748,7 +727,7 @@ fieldset input:checked + label::before {
 .range-controls {
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .range-controls .scale {
@@ -800,6 +779,7 @@ fieldset input:checked + label::before {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .btn-transparent:hover {
@@ -911,7 +891,7 @@ border-bottom: 1px solid #e5e5e5;
   padding-left: 235px;
   position: relative;
   border-bottom: 1px solid #e5e5e5;
-  padding-right: 150px;
+  padding-right: 250px;
   min-height: 125px;
 
 }
@@ -923,9 +903,8 @@ border-bottom: 1px solid #e5e5e5;
   left:0;
 }
 
-.info{
-  float: left;
-  width: 250px;
+.hotel-name{
+ display: block;
 }
 
 
@@ -944,7 +923,7 @@ border-bottom: 1px solid #e5e5e5;
   opacity: 0.3;
   color: black;
 }
-.info .more, .info .reservations{
+ .info-column .more, .info-column .reservations{
   display: inline-block;
   margin: 12px auto;
   padding: 4px 17px 3px 17px;
@@ -956,23 +935,23 @@ border-bottom: 1px solid #e5e5e5;
   text-align: center;
 
 }
-.info .more{
+.info-column .more{
   background-color: #81b3d2;
 }
-.info .more:hover{
+.info-column .more:hover{
   background-color: #669ec0;
 }
-.info .more:active{
+.info-column .more:active{
   background-color: #5496bd;
   color: #88b6d1;
 }
-.info .reservations{
+.info-column .reservations{
   background-color: #766357;
 }
-.info .reservations:hover{
+.info-column .reservations:hover{
   background-color: #604e43;
 }
-.info .reservations:active{
+.info-column .reservations:active{
   background-color: #503e33;
   color: #857871;
 }
@@ -982,12 +961,10 @@ border-bottom: 1px solid #e5e5e5;
 }
 
 .result-item-right{
-  /*float:right;*/
+  position: absolute;
   padding-right: 6%;
-  /*background-color: blue;*/
   text-align: right;
   width:9%;
-  position: absolute;
   top:25px;
   right:0;
 
@@ -996,7 +973,10 @@ border-bottom: 1px solid #e5e5e5;
    background-color: #f2f2f2;
    padding: 4px 9px;
     }
-
+.stars3, .stars4, .stars2{
+  margin-bottom: 40px;
+  margin-top: 2px;
+}
 .stars4::before {
   content: url("../img/stars4.png");
 }
@@ -1007,7 +987,6 @@ border-bottom: 1px solid #e5e5e5;
   content: url("../img/stars2.png");
 }
 .formchoice-show {
-
 animation: scaleup 0.6s ease;
 animation-fill-mode: forwards;
 }
