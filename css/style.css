@@ -85,6 +85,8 @@ h1
     width: 23%;
     padding-top: 14px;
     padding-bottom: 14px;
+
+    vertical-align: top;
 }
 
 
@@ -257,6 +259,7 @@ h1
     display: inline-block;
 
     margin-top: 160px;
+    vertical-align: top;
 }
 
 .live::before,
@@ -880,7 +883,7 @@ footer
 
 .form-column input + label::before
 {
-    padding-right: 15px;
+    padding-right: 19px;
 
     content: url('../img/icon-check-off.png');
 }
@@ -1077,6 +1080,8 @@ footer
     width: 11px;
     height: 10px;
 
+    vertical-align: top;
+
     border: none;
     background: transparent;
 }
@@ -1236,6 +1241,7 @@ footer
     margin: 12px auto;
     padding: 4px 17px 3px 17px;
 
+    vertical-align: top;
     text-align: center;
     text-decoration: none;
 
